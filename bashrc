@@ -7,6 +7,7 @@ PATH=$HOME/bin:$PATH
 export PATH
 
 alias node-dev='$HOME/src/node/out/Release/node'
+alias npm-dev='$HOME/src/npm/bin/npm-cli.js'
 
 # This loads NVM
 [[ -s /Users/bajtos/.nvm/nvm.sh ]] && . /Users/bajtos/.nvm/nvm.sh
