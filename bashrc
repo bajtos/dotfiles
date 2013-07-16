@@ -9,6 +9,18 @@ export PATH
 alias node-dev='$HOME/src/node/out/Release/node'
 alias npm-dev='$HOME/src/npm/bin/npm-cli.js'
 
+export D8_PATH=$HOME/src/node/deps/v8/out/native
+
+case `uname -s` in
+  Darwin )
+    alias v8-tick-processor='$HOME/src/node/deps/v8/tools/mac-tick-processor'
+    ;;
+
+  Linux )
+    alias v8-tick-processor='$HOME/src/node/deps/v8/tools/linux-tick-processor'
+    ;;
+esac
+
 # This loads NVM
 [[ -s /Users/bajtos/.nvm/nvm.sh ]] && . /Users/bajtos/.nvm/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
