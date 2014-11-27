@@ -16,9 +16,16 @@ set tags=./tags,tags
 set laststatus=2
 set statusline=%f\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l\ (%P\ of\ %L)
 
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 au FileType gitcommit set tw=72 ts=4 sts=2
 
 :nnoremap <leader>m :silent !open -a 'Marked 2.app' '%:p'<cr>
+
+:map <S-F6> :TernRename<cr>
+au FileType javascript map <C-]> :TernDef<cr>
+
 
 :setlocal spell spelllang=en_us
 :set nospell
