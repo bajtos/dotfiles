@@ -23,9 +23,12 @@ alias npm-dev='$HOME/src/npm/bin/npm-cli.js'
 alias slc-dev='$HOME/src/strong/cli/bin/slc'
 alias sl-npm='$HOME/src/sl-npm/bin/npm-cli.js'
 alias npmjs='npm --userconfig ~/.strong-registry/default.ini'
-alias slt-release='npm_config_userconfig=$HOME/.strong-registry/default.ini /usr/local/bin/slt-release'
+alias slt-release='npm_config_userconfig=$HOME/.strong-registry/default.ini /usr/local/bin/slt-release -unp'
 alias makepwd='dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed -e "s/=*$//"'
 
 # This loads NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+# Local host-specific configuration
+[[ -f ~/.sh_local ]] && . ~/.sh_local

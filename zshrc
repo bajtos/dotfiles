@@ -45,7 +45,8 @@ export ZSH_CUSTOM=$HOME/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew npm)
+plugins=(git) # brew npm
+
 
 # store LC_CTYPE
 ORIG_LC_CTYPE=$LC_CTYPE
