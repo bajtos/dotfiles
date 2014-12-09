@@ -1,5 +1,7 @@
 call pathogen#infect()
 
+set backspace=indent,eol,start
+
 syntax on
 
 set ts=2
