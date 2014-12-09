@@ -41,3 +41,10 @@ set list listchars=tab:»·,trail:·
 
 " trim trailing white-space
 autocmd BufWritePre * :%s/\s\+$//e
+
+" open all folds by default
+autocmd BufWinEnter *.* normal zR
+
+" save and restore text folding across vim restarts
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
