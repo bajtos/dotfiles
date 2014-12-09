@@ -47,6 +47,7 @@ export ZSH_CUSTOM=$HOME/.zsh_custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git) # brew npm
 
+setopt rmstarsilent
 
 # store LC_CTYPE
 ORIG_LC_CTYPE=$LC_CTYPE
