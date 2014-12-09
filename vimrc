@@ -25,9 +25,9 @@ au FileType gitcommit set tw=72 ts=4 sts=2
 
 :nnoremap <leader>m :silent !open -a 'Marked 2.app' '%:p'<cr>
 
-:map <S-F6> :TernRename<cr>
-au FileType javascript map <C-]> :TernDef<cr>
-
+au FileType javascript :noremap <S-F6> :TernRename<cr>
+au FileType javascript :inoremap <S-F6> <C-O>:TernRename<cr>
+au FileType javascript noremap <C-]> :TernDef<cr>
 
 :setlocal spell spelllang=en_us
 :set nospell
