@@ -1,1 +1,4 @@
 *.swp
+.idea
+.DS_Store
+.tern-project
