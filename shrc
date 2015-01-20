@@ -4,12 +4,13 @@ export D8_PATH=$HOME/src/node/deps/v8/out/native
 
 case `uname -s` in
   Darwin )
-    alias v8-tick-processor='$HOME/src/node/deps/v8/tools/mac-tick-processor'
+    alias v8-tick-processor='$HOME/src/io.js/deps/v8/tools/mac-tick-processor'
     PATH=/usr/local/Cellar/openssl/1.0.1e/bin:/usr/local/bin:$PATH
+    alias mongod="mongod --config /usr/local/etc/mongod.conf"
     ;;
 
   Linux )
-    alias v8-tick-processor='$HOME/src/node/deps/v8/tools/linux-tick-processor'
+    alias v8-tick-processor='$HOME/src/io.js/deps/v8/tools/linux-tick-processor'
     ;;
 esac
 
@@ -18,7 +19,7 @@ export EDITOR=vim
 PATH=$HOME/bin:$PATH
 export PATH
 
-alias node-dev='$HOME/src/node/out/Release/node'
+alias node-dev='$HOME/src/io.js/out/Release/node'
 alias npm-dev='$HOME/src/npm/bin/npm-cli.js'
 alias slc-dev='$HOME/src/strong/cli/bin/slc'
 alias sl-npm='$HOME/src/sl-npm/bin/npm-cli.js'
