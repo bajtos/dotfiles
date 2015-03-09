@@ -1,3 +1,7 @@
+" workaround for vim-javascript
+:set regexpengine=1
+:syntax enable
+
 call pathogen#infect()
 
 set backspace=indent,eol,start
@@ -28,6 +32,9 @@ au FileType gitcommit set tw=72 ts=4 sts=2
 au FileType javascript :noremap <S-F6> :TernRename<cr>
 au FileType javascript :inoremap <S-F6> <C-O>:TernRename<cr>
 au FileType javascript noremap <C-]> :TernDef<cr>
+
+:noremap <F2> :make<cr>
+:inoremap <F2> <C-O>:make<cr>
 
 :setlocal spell spelllang=en_us
 :set nospell
