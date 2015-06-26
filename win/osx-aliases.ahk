@@ -15,6 +15,8 @@
 !+w::SendInput ^+w
 !,::SendInput ^,
 !l::SendInput ^l
+!r::SendInput ^r
+!Up::SendInput ^Up
 
 !1::SendInput ^1
 !2::SendInput ^2
@@ -27,5 +29,5 @@
 !9::SendInput ^9
 
 $^a::SendInput {Home}
+$^e::SendInput {End}
 !a::SendInput ^a
-!e::SendInput ^e
