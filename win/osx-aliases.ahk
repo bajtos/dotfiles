@@ -17,6 +17,7 @@
 !l::SendInput ^l
 !r::SendInput ^r
 !Up::SendInput ^Up
+!Enter::SendInput ^{Enter}
 
 !1::SendInput ^1
 !2::SendInput ^2
