@@ -55,3 +55,37 @@ autocmd BufWinEnter *.* normal zR
 " save and restore text folding across vim restarts
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+" Leader shortcuts
+" http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+let mapleader = "\<Space>"
+
+" Type <Space>o to open a new file:
+nnoremap <Leader>o :CtrlP<CR>
+
+" Copy & paste to system clipboard with <Space>p and <Space>y:
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Hit v to select one character, v again to expand to word, etc.
+vmap v <Plug>(expand_region_expand)
+
+" Hit <C-v> to go back to previous selection if I went too far
+vmap <C-v> <Plug>(expand_region_shrink)
+
+" Configure CtrlP to use git or silver searcher for autocompletion
+let g:ctrlp_use_caching = 0
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+  let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    \ }
+endif
