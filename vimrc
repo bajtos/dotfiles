@@ -1,3 +1,7 @@
+if has('win32') || has ('win64')
+  set viewdir=$HOME/vimfiles/view
+endif
+
 " workaround for vim-javascript
 :set regexpengine=1
 :syntax enable
