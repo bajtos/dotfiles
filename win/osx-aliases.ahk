@@ -12,7 +12,7 @@
 !t::SendInput ^t
 !+t::SendInput ^+t
 !w::SendInput ^w
-!+w::SendInput ^+w
+!q::SendInput !{F4}
 !,::SendInput ^,
 !l::SendInput ^l
 !r::SendInput ^r
