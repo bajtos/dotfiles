@@ -1,6 +1,11 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 if has('win32') || has ('win64')
   set viewdir=$HOME/vimfiles/view
 endif
+
+filetype off
 
 " workaround for vim-javascript
 :set regexpengine=1
@@ -26,7 +31,7 @@ set tags=./tags,tags
 set laststatus=2
 set statusline=%f\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l\ (%P\ of\ %L)
 
-filetype plugin on
+filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 au FileType gitcommit set tw=72 ts=4 sts=2
