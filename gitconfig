@@ -1,0 +1,22 @@
+[color]
+	ui = true
+[user]
+	name = Miroslav Bajtoš
+	email = mbajtos@cz.ibm.com
+[core]
+	excludesfile = /Users/bajtos/.gitignore_global
+	editor = /usr/local/bin/vim
+	autocrlf = input
+[push]
+	default = simple
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+#[remote "upstream"]
+#	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+#[merge]
+#	ff = only
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	mg = merge --no-ff --edit
+[rebase]
+	autosquash = true
