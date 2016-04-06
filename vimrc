@@ -37,12 +37,17 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+" When set to 2 the error window will be automatically closed when no errors
+" are detected, but not opened automatically
+let g:syntastic_auto_loc_list = 2
+"let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 5
 
-let g:syntastic_javascript_checkers= ['jscs', 'jshint']
+let g:syntastic_javascript_checkers= ['eslint']
 let g:syntastic_aggregate_errors = 1
+
+command E Ex " disambiguation - :E can be :Ex or :Errors
 
 
 filetype plugin indent on
