@@ -20,3 +20,5 @@
 	mg = merge --no-ff --edit
 [rebase]
 	autosquash = true
+[transfer]
+	fsckobjects = true
