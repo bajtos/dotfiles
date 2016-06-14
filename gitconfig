@@ -22,3 +22,5 @@
 	autosquash = true
 [transfer]
 	fsckobjects = true
+[diff]
+	compactionHeuristic = true
