@@ -18,7 +18,7 @@ export CLICOLOR=1
 export EDITOR=vim
 export NODE_REPL_HISTORY_FILE=$HOME/.node_history
 
-PATH=$HOME/bin:$PATH
+PATH=$HOME/bin:./node_modules/.bin:$PATH
 export PATH
 
 alias node-dev='$HOME/src/io.js/out/Release/node'
@@ -29,6 +29,8 @@ alias npmjs='npm --userconfig ~/.strong-registry/default.ini'
 alias slt-release='npm_config_userconfig=$HOME/.strong-registry/default.ini /usr/local/bin/slt-release -unp'
 alias makepwd='dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed -e "s/=*$//"'
 alias git-cleanup='git fetch -p && git branch --merged | grep -v "\*" | grep -v "^master\$" | xargs -n 1 git branch -d'
+alias it=git
+alias im=vim
 
 # This loads NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
