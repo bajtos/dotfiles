@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	name = Miroslav Bajtoš
-	email = mbajtos@cz.ibm.com
+	email = mbajtoss@gmail.com
 [core]
 	excludesfile = /Users/bajtos/.gitignore_global
 	editor = /usr/local/bin/vim
@@ -17,6 +17,7 @@
 #	ff = only
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+#	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	mg = merge --no-ff --edit
 [rebase]
 	autosquash = true
