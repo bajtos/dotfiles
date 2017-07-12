@@ -18,7 +18,7 @@ export CLICOLOR=1
 export EDITOR=vim
 export NODE_REPL_HISTORY_FILE=$HOME/.node_history
 
-PATH=$HOME/bin:./node_modules/.bin:$PATH
+PATH=$HOME/bin:$PATH
 export PATH
 
 alias node-dev='$HOME/src/node/out/Release/node'
