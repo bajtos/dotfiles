@@ -2,3 +2,4 @@ peerDependencies
 rsp
 state
 pack
+toHtml

@@ -3,6 +3,7 @@
 [user]
 	name = Miroslav Bajtoš
 	email = mbajtoss@gmail.com
+	signingkey = 6F2304BA9361C7E3
 [core]
 	excludesfile = /Users/bajtos/.gitignore_global
 	editor = /usr/local/bin/vim
@@ -19,6 +20,7 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 #	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	mg = merge --no-ff --edit
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
 [rebase]
 	autosquash = true
 [transfer]
@@ -32,3 +34,5 @@
 	diff = diff-highlight | less
 [interactive]
 	diffFilter = diff-highlight | less
+[commit]
+	gpgsign = true
