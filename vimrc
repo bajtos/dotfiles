@@ -61,6 +61,8 @@ au FileType javascript :noremap <S-F6> :TernRename<cr>
 au FileType javascript :inoremap <S-F6> <C-O>:TernRename<cr>
 au FileType javascript noremap <C-]> :TernDef<cr>
 
+" au FileType markdown :set tw=0
+
 :noremap <F2> :make<cr>
 :inoremap <F2> <C-O>:make<cr>
 

@@ -21,12 +21,14 @@
 #	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	mg = merge --no-ff --edit
 	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+	pushf = push --force-with-lease
 [rebase]
 	autosquash = true
 [transfer]
 	fsckobjects = true
 [diff]
 	compactionHeuristic = true
+	colorMoved = dimmed_zebra
 [pager]
 # https://github.com/git/git/tree/master/contrib/diff-highlight
 	log = diff-highlight | less
