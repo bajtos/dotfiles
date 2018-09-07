@@ -32,6 +32,7 @@ alias git-cleanup='git fetch -p && git branch --merged | grep -v "\*" | grep -v 
 alias it=git
 alias im=vim
 alias mailcat='python -m smtpd -n -c DebuggingServer localhost:2525'
+alias did="vim +'normal Go' +'r!date' ~/did.txt"
 
 # This loads NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
