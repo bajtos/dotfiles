@@ -10,12 +10,8 @@
 	autocrlf = input
 [push]
 	default = simple
-[remote "origin"]
-	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
-#[remote "upstream"]
-#	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
-#[merge]
-#	ff = only
+[format]
+	signOff = true
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 #	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -38,3 +34,5 @@
 	diffFilter = diff-highlight | less
 [commit]
 	gpgsign = true
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
