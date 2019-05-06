@@ -13,7 +13,11 @@ for name in *; do
       echo "Skipping VSCode files, '$vscode' directory not found"
     else
       for name in `ls -1 vscode`; do
-        ln -s "$PWD/vscode/$name" "$vscode/$name"
+        if [ -L "$vscode/$name" ]; then
+          echo "Skipping vscode/$name - symlinks already exists"
+        else
+          ln -s "$PWD/vscode/$name" "$vscode/$name"
+        fi
       done
     fi
     continue;
