@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
@@ -7,6 +7,17 @@ for name in *; do
     continue;
   fi
 
+  if [[ $name == "vscode" ]]; then
+    vscode="$HOME/Library/Application Support/Code/User"
+    if [ ! -d "$vscode" ]; then
+      echo "Skipping VSCode files, '$vscode' directory not found"
+    else
+      for name in `ls -1 vscode`; do
+        ln -s "$PWD/vscode/$name" "$vscode/$name"
+      done
+    fi
+    continue;
+  fi
   target="$HOME/.$name"
   if [ -e $target ]; then
     if [ ! -L $target ]; then
