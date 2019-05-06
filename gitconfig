@@ -33,5 +33,6 @@
 	diffFilter = diff-highlight | less
 [commit]
 	gpgsign = true
+	template = ~/.gitmessage
 [remote "origin"]
 	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
