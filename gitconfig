@@ -3,7 +3,6 @@
 [user]
 	name = Miroslav Bajtoš
 	email = mbajtoss@gmail.com
-	signingkey = 6F2304BA9361C7E3
 [core]
 	excludesfile = /Users/bajtos/.gitignore_global
 	editor = /usr/local/bin/vim
