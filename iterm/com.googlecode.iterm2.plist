@@ -31660,6 +31660,10 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
+	<key>EnableDivisionView</key>
+	<true/>
+	<key>EnableProxyIcon</key>
+	<false/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
@@ -31790,9 +31794,9 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
-	<false/>
-	<key>HideTab</key>
 	<true/>
+	<key>HideTab</key>
+	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
@@ -31800,7 +31804,7 @@
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
-	<false/>
+	<true/>
 	<key>HotkeyChar</key>
 	<integer>116</integer>
 	<key>HotkeyCode</key>
@@ -31857,15 +31861,15 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>672 498 620 392 0 0 1920 1057 </string>
+	<string>431 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>107 334 958 451 0 0 1440 877 </string>
+	<string>107 332 958 470 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>45 23 1395 854 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 70 585 452 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_0571329F-1265-4C33-A7B7-B16C8C5648CF</key>
@@ -32026,7 +32030,7 @@
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -32643,6 +32647,8 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -32727,7 +32733,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-18T11:40:58Z</date>
+	<date>2019-03-11T06:48:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -32746,6 +32752,10 @@
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
+	<key>SwitchPaneModifier</key>
+	<integer>5</integer>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -32776,6 +32786,8 @@
 	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
+	<key>UseVirtualKeyCodesForDetectingDigits</key>
+	<true/>
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
@@ -32793,7 +32805,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
