@@ -34,5 +34,5 @@
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
-[remote "origin"]
-	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+#[remote "origin"]
+#	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
