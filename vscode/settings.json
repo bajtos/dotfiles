@@ -84,5 +84,7 @@
   "editor.renderWhitespace": "all",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.editor.labelFormat": "medium"
 }
