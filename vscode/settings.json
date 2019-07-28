@@ -103,6 +103,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "workbench.editor.revealIfOpen": true,
   "liveshare.featureSet": "insiders",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
