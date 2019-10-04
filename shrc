@@ -29,6 +29,7 @@ alias npmjs='npm --userconfig ~/.strong-registry/default.ini'
 alias slt-release='/usr/local/bin/slt-release -u'
 alias makepwd='dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed -e "s/=*$//"'
 alias git-cleanup='git fetch -p && git branch --merged | grep -v "\*" | grep -v "^master\$" | xargs -n 1 git branch -d'
+alias g=git
 alias it=git
 alias im=vim
 alias mailcat='python -m smtpd -n -c DebuggingServer localhost:2525'

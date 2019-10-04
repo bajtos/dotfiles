@@ -13,10 +13,15 @@
 	signOff = true
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-#	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	mg = merge --no-ff --edit
 	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
 	pushf = push --force-with-lease
+	s = status
+	d = diff
+	co = checkout
+	br = branch
+	cane = commit --amend --no-edit
+	au = add -u
+	cf = commit -m "fixup!"
 [rebase]
 	autosquash = true
 [transfer]
