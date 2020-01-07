@@ -97,17 +97,23 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.editor.revealIfOpen": true,
-  "liveshare.featureSet": "insiders",
-  "[typescriptreact]": {
+  "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "workbench.editor.revealIfOpen": true,
+  "liveshare.featureSet": "insiders",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "workbench.editor.labelFormat": "medium"
+  "workbench.editor.labelFormat": "medium",
+  "npm.enableRunFromFolder": true,
+  "workbench.editor.tabSizing": "shrink",
+  "problems.showCurrentInStatus": true
 }
