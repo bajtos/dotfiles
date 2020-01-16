@@ -1,7 +1,7 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.fontFamily": "Monaco",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.tabSize": 2,
   "editor.rulers": [80],
   "editor.autoIndent": true,
