@@ -1,3 +1,5 @@
+[ -n ${WSL_AUTH_SOCK} ] && export SSH_AUTH_SOCK=${WSL_AUTH_SOCK}
+
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
