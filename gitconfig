@@ -7,6 +7,8 @@
 	excludesfile = /Users/bajtos/.gitignore_global
 	editor = /usr/local/bin/vim
 	autocrlf = input
+	# https://github.com/dandavison/delta/releases/download/0.0.17/delta-0.0.17-x86_64-unknown-linux-gnu.tar.gz
+	pager = "delta --dark"
 [push]
 	default = simple
 [format]
@@ -29,13 +31,6 @@
 [diff]
 	compactionHeuristic = true
 	colorMoved = dimmed_zebra
-[pager]
-# https://github.com/git/git/tree/master/contrib/diff-highlight
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
-[interactive]
-	diffFilter = diff-highlight | less
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
