@@ -9,5 +9,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source <(node --completion-bash)
-source <(npx --shell-auto-fallback bash)
+which node > /dev/null && source <(node --completion-bash)
+which npx > /dev/null && source <(npx --shell-auto-fallback bash)
