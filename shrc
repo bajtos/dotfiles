@@ -18,9 +18,6 @@ export CLICOLOR=1
 export EDITOR=vim
 export NODE_REPL_HISTORY_FILE=$HOME/.node_history
 
-PATH=$HOME/bin:./node_modules/.bin:$PATH
-export PATH
-
 # enable color support of ls and also add handy aliases
 # Note that `ls` on MacOS does not support `--color` option
 # and uses CLICOLOR instead

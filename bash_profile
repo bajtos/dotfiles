@@ -20,3 +20,8 @@ function iterm2_print_user_vars() {
 if which hub > /dev/null; then
   eval "$(hub alias -s)"
 fi
+
+export PATH="$HOME/bin:./node_modules/.bin:$PATH"
+if [ -f ~/.cargo/env ]; then
+  source ~/.cargo/env
+fi
