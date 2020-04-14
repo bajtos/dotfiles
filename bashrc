@@ -38,9 +38,20 @@ elif [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-GIT_PS1_SHOWCOLORHINTS=1
-. ~/.git-prompt.sh
-PROMPT_COMMAND='__git_ps1 "\[\033]0;\u@\h: \w\007\]\u@\h:\w" "\\\$ "'
+if which starship >/dev/null; then
+  function set_win_title(){
+      echo -ne "\033]0; ${PWD/#$HOME/\~} \007"
+  }
+  starship_precmd_user_func="set_win_title"
+  eval "$(starship init bash)"
+else
+  echo "Please install starship, see https://starship.rs/guide/#getting-started"
+  echo "Falling back to git-prompt.sh"
+  GIT_PS1_SHOWCOLORHINTS=1
+   . ~/.git-prompt.sh
+  PROMPT_COMMAND='__git_ps1 "\[\033]0;\u@\h: \w\007\]\u@\h:\w" "\\\$ "'
+fi
+
 . ~/.git-completion.bash
 
 . ~/.shrc
