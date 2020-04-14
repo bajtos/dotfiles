@@ -1,0 +1,25 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Wait 20 milliseconds for starship to check files under the current directory.
+scan_timeout = 20
+
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "character",
+]
+
+[git_branch]
+style = "green"
+
+[directory]
+truncation_length = -1
+truncate_to_repo = false
+
+[character]
+use_symbol_for_status = true

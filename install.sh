@@ -23,6 +23,19 @@ for name in *; do
     continue;
   fi
   target="$HOME/.$name"
+  if [[ $name == "config" ]]; then
+    # Config files often contain secret credentials
+    # Install symlinks only for config files that are safe to be shared
+    mkdir -p $target
+    for fname in `ls -1 $name`; do
+      if [ -L "$target/$fname" ]; then
+        echo "Skipping $name/$fname - symlinks already exists"
+      else
+        ln -s "$PWD/$name/$fname" "$target/$fname"
+      fi
+    done
+    continue;
+  fi
   if [ -e $target ]; then
     if [ ! -L $target ]; then
       cutline=`grep -n -m1 "$cutstring" "$target" | sed "s/:.*//"`
