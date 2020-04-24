@@ -60,6 +60,7 @@ au FileType gitcommit set tw=72 ts=4 sts=2
 au FileType javascript :noremap <S-F6> :TernRename<cr>
 au FileType javascript :inoremap <S-F6> <C-O>:TernRename<cr>
 au FileType javascript noremap <C-]> :TernDef<cr>
+au FileType gitconfig set noet
 
 " au FileType markdown :set tw=0
 
