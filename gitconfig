@@ -7,8 +7,8 @@
 	excludesfile = /Users/bajtos/.gitignore_global
 	editor = vim
 	autocrlf = input
-	# https://github.com/dandavison/delta/releases/download/0.0.17/delta-0.0.17-x86_64-unknown-linux-gnu.tar.gz
-	pager = "delta --dark"
+	# https://github.com/dandavison/delta/releases
+	pager = "delta --dark --minus-color='#5e1f20' --minus-emph-color='#a31011' --plus-color='#10470f' --color-only"
 [push]
 	default = simple
 [format]
