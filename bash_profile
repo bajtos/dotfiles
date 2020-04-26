@@ -1,5 +1,11 @@
 [ -n ${WSL_AUTH_SOCK} ] && export SSH_AUTH_SOCK=${WSL_AUTH_SOCK}
 
+if uname -r | grep -q Microsoft
+then
+  export DOCKER_HOST=tcp://localhost:2375
+fi
+
+
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
