@@ -43,6 +43,7 @@ alias it=git
 alias im=vim
 alias mailcat='python -m smtpd -n -c DebuggingServer localhost:2525'
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
+alias cargo-omnia='docker run --rm -it -v "$(pwd -W)":/home/rust/src messense/rust-musl-cross:armv7-musleabihf cargo'
 
 # Local host-specific configuration
 [[ -f ~/.sh_local ]] && . ~/.sh_local
