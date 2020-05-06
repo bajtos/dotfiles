@@ -1,7 +1,7 @@
-
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 // File location: C:\Users\bajtos\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+// Cygwin location: /c/Users/bajtos/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
@@ -21,7 +21,7 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
-		"closeOnExit" : true,
+                "closeOnExit" : true,
                 "hidden": false
             },
             {
@@ -29,9 +29,9 @@
                 "guid": "{e8e2ae6c-ed86-4a35-a50a-e722c52cea2c}",
                 "name": "git bash",
                 "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-		"startingDirectory": "C:\\src",
-		"closeOnExit" : true,
-		"icon": "ms-appdata:///roaming/git-bash_32px.ico",
+                "startingDirectory": "C:\\src",
+                "closeOnExit" : true,
+                "icon": "ms-appdata:///roaming/git-bash_32px.ico",
                 "hidden": false
             },
             {
@@ -52,7 +52,7 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl",
-		"commandline" : "wsl.exe ~"
+                "commandline" : "wsl.exe ~"
             }
         ]
     },
@@ -64,43 +64,43 @@
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
       {
-        "command": "switchToTab0",
+        "command": {"action": "switchToTab", "argument": 0},
         "keys": [ "alt+1" ]
       },
       {
-        "command": "switchToTab1",
+        "command": {"action": "switchToTab", "argument": 1},
         "keys": [ "alt+2" ]
       },
       {
-        "command": "switchToTab2",
+        "command": {"action": "switchToTab", "argument": 2},
         "keys": [ "alt+3" ]
       },
       {
-        "command": "switchToTab3",
+        "command": {"action": "switchToTab", "argument": 3},
         "keys": [ "alt+4" ]
       },
       {
-        "command": "switchToTab4",
+        "command": {"action": "switchToTab", "argument": 4},
         "keys": [ "alt+5" ]
       },
       {
-        "command": "switchToTab5",
+        "command": {"action": "switchToTab", "argument": 5},
         "keys": [ "alt+6" ]
       },
       {
-        "command": "switchToTab6",
+        "command": {"action": "switchToTab", "argument": 6},
         "keys": [ "alt+7" ]
       },
       {
-        "command": "switchToTab7",
+        "command": {"action": "switchToTab", "argument": 7},
         "keys": [ "alt+8" ]
       },
       {
-        "command": "switchToTab8",
+        "command": {"action": "switchToTab", "argument": 8},
         "keys": [ "alt+9" ]
       },
       {
-        "command": "switchToTab9",
+        "command": {"action": "switchToTab", "argument": 9},
         "keys": [ "alt+0" ]
       },
       {
