@@ -13,3 +13,6 @@
 [submodule "vim/typescript-vim"]
 	path = vim/pack/bajtos/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim/pack/bajtos/start/vim-ripgrep"]
+	path = vim/pack/bajtos/start/vim-ripgrep
+	url = git@github.com:jremmen/vim-ripgrep.git
