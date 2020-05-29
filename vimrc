@@ -11,8 +11,6 @@ filetype off
 :set regexpengine=1
 :syntax enable
 
-call pathogen#infect()
-
 set backspace=indent,eol,start
 
 syntax on
@@ -53,7 +51,6 @@ au FileType gitconfig set noet
 :setlocal spell spelllang=en_us
 :set nospell
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 

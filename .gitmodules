@@ -1,18 +1,15 @@
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
+[submodule "vim/ctrlp.vim"]
+	path = vim/pack/bajtos/start/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/tern_for_vim"]
-	path = vim/bundle/tern_for_vim
+[submodule "vim/tern_for_vim"]
+	path = vim/pack/bajtos/start/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim.git
-[submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "vim/bundle/vim-javascript"]
-	path = vim/bundle/vim-javascript
+[submodule "vim/vim-javascript"]
+	path = vim/pack/bajtos/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/bundle/vim-expand-region"]
-	path = vim/bundle/vim-expand-region
+[submodule "vim/vim-expand-region"]
+	path = vim/pack/bajtos/start/vim-expand-region
 	url = git@github.com:terryma/vim-expand-region.git
-[submodule "vim/bundle/typescript-vim"]
-	path = vim/bundle/typescript-vim
+[submodule "vim/typescript-vim"]
+	path = vim/pack/bajtos/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
