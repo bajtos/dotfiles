@@ -5,16 +5,13 @@ if has('win32') || has ('win64')
   set viewdir=$HOME/vimfiles/view
 endif
 
-filetype off
+filetype on
+filetype plugin on
+filetype indent on
 
-" workaround for vim-javascript
-:set regexpengine=1
-:syntax enable
+syntax enable
 
 set backspace=indent,eol,start
-
-syntax on
-
 set ts=2
 set sw=2
 set et
@@ -31,22 +28,21 @@ set statusline=%f\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l\ (%P\ o
 
 command E Ex " disambiguation - :E can be :Ex or :Errors
 
-filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
+autocmd CompleteDone * pclose
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-x><C-o>
 
 au FileType gitcommit set tw=72 ts=4 sts=2
 
 :nnoremap <leader>m :silent !open -a 'Marked 2.app' '%:p'<cr>
 
-au FileType javascript :noremap <S-F6> :TernRename<cr>
-au FileType javascript :inoremap <S-F6> <C-O>:TernRename<cr>
+au FileType javascript noremap <F2> :TernRename<cr>
+au FileType javascript inoremap <F2> <C-O>:TernRename<cr>
 au FileType javascript noremap <C-]> :TernDef<cr>
 au FileType gitconfig set noet
 
 " au FileType markdown :set tw=0
-
-:noremap <F2> :make<cr>
-:inoremap <F2> <C-O>:make<cr>
 
 :setlocal spell spelllang=en_us
 :set nospell
