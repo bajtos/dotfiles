@@ -31889,7 +31889,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>42 61 1873 996 0 0 1920 1057 </string>
+	<string>42 0 1878 1057 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 70 585 452 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_0571329F-1265-4C33-A7B7-B16C8C5648CF</key>
@@ -32323,9 +32323,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>[1;5D</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -32351,9 +32351,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>[1;5C</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -33029,7 +33029,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>59C96003-E119-419F-94E2-A5B10E4B8D72</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>144</integer>
+	<integer>167</integer>
 	<key>NoSyncNeverPromptToChangeOption</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -33852,7 +33852,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-14T07:03:31Z</date>
+	<date>2020-06-01T07:11:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
