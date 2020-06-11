@@ -37,7 +37,8 @@ alias sl-npm='$HOME/src/sl-npm/bin/npm-cli.js'
 alias npmjs='npm --userconfig ~/.strong-registry/default.ini'
 alias slt-release='/usr/local/bin/slt-release -u'
 alias makepwd='dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed -e "s/=*$//"'
-alias git-cleanup='git fetch -p && git branch --merged | grep -v "\*" | grep -v "^master\$" | xargs -n 1 git branch -d'
+# alias git-cleanup='git fetch -p && git branch --merged | grep -v "\*" | grep -v "^master\$" | xargs -n 1 git branch -d'
+alias git-cleanup="git fetch -p && git branch -vv | grep ': gone]'| grep -v '\*' | awk '{ print \$1; }' | xargs git branch -D"
 alias g=git
 alias it=git
 alias im=vim
