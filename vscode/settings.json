@@ -116,5 +116,9 @@
   "workbench.editor.labelFormat": "medium",
   "npm.enableRunFromFolder": true,
   "workbench.editor.tabSizing": "shrink",
-  "problems.showCurrentInStatus": true
+  "problems.showCurrentInStatus": true,
+
+  //=== Silence the noise ===//
+
+  "workbench.activityBar.visible": false,
 }
