@@ -117,6 +117,7 @@
   "npm.enableRunFromFolder": true,
   "workbench.editor.tabSizing": "shrink",
   "problems.showCurrentInStatus": true,
+  "liveshare.guestApprovalRequired": true,
 
   //=== Silence the noise ===//
 
