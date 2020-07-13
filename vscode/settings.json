@@ -85,7 +85,6 @@
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "git.autofetch": true,
-  "editor.minimap.enabled": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "markdown.extension.toc.updateOnSave": false,
@@ -122,4 +121,8 @@
   //=== Silence the noise ===//
 
   "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false
 }
