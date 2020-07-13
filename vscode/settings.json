@@ -21,6 +21,7 @@
     "Compat",
     "DATASOURCES",
     "Deserialize",
+    "Fastify",
     "Flinstone",
     "Monokai",
     "Neovim",
