@@ -8,7 +8,13 @@
 	editor = vim
 	autocrlf = input
 	# https://github.com/dandavison/delta/releases
-	pager = "delta --dark --minus-color='#5e1f20' --minus-emph-color='#a31011' --plus-color='#10470f' --color-only"
+	pager = delta
+[delta]
+	dark = true
+	plus-style = "syntax #10470f"
+	minus-style = "syntax #5e1f20"
+	minus-emph-style = "normal #a31011"
+	color-only = true
 [push]
 	default = simple
 [format]
