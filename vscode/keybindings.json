@@ -8,7 +8,7 @@
   },
   {
     "key": "cmd+k cmd+b",
-    "command": "workbench.action.toggleSidebarVisibility",
+    "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "cmd+k cmd+e",
@@ -20,15 +20,15 @@
   },
   {
     "key": "cmd+k cmd+h",
-    "command": "workbench.view.extension.github-pull-requests",
+    "command": "workbench.view.extension.github-pull-requests"
   },
   {
-      "key": "cmd+k cmd+d",
-      "command": "workbench.view.debug"
+    "key": "cmd+k cmd+d",
+    "command": "workbench.view.debug"
   },
   {
-      "key": "cmd+k cmd+x",
-      "command": "workbench.extensions.action.showInstalledExtensions"
+    "key": "cmd+k cmd+x",
+    "command": "workbench.extensions.action.showInstalledExtensions"
   },
   {
     "key": "cmd+k cmd+l",
@@ -38,12 +38,24 @@
   //=== Other customizations ===//
 
   { "key": "shift+cmd+t", "command": "workbench.action.tasks.test" },
-  { "key": "ctrl+]", "command": "editor.action.goToDeclaration", "when": "editorTextFocus" },
-  { "key": "ctrl+t", "command": "workbench.action.navigateBack", "when": "editorTextFocus" },
-  { "key": "ctrl+o", "command": "workbench.action.navigateBack",  "when": "editorTextFocus" },
+  {
+    "key": "ctrl+]",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  },
   {
     "key": "ctrl+n",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-  },
+  }
 ]
