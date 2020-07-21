@@ -1,6 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  //=== Activity bar ===//
+  //=== Activity bar (MacOS) ===//
 
   {
     "key": "cmd+k cmd+a",
@@ -35,7 +35,50 @@
     "command": "workbench.view.extension.liveshare"
   },
 
-  //=== File Explorer ===/
+  //=== Activity bar (Windows) ===//
+
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+h",
+    "command": "workbench.view.extension.github-pull-requests"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+x",
+    "command": "workbench.extensions.action.showInstalledExtensions"
+  },
+  {
+    "when": "isWindows",
+    "key": "ctrl+k ctrl+l",
+    "command": "workbench.view.extension.liveshare"
+  },
+
+  //=== File Explorer (MacOS) ===/
   {
     "key": "cmd+d",
     "command": "duplicate.execute",
@@ -57,9 +100,41 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
 
+  //=== File Explorer (Windows) ===/
+  {
+    "key": "ctrl+d",
+    "command": "duplicate.execute",
+    "when": "isWindows && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "isWindows && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+ctrl+n",
+    "command": "explorer.newFolder",
+    "when": "isWindows && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "isWindows && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+
   //=== Other customizations ===//
 
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "isWindows"
+  },
   { "key": "shift+cmd+t", "command": "workbench.action.tasks.test" },
+  {
+    "key": "shift+ctrl+t",
+    "command": "workbench.action.tasks.test",
+    "when": "isWindows"
+  },
   {
     "key": "ctrl+]",
     "command": "editor.action.goToDeclaration",
