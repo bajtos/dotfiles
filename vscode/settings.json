@@ -8,7 +8,7 @@
   "editor.autoIndent": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Default Light+",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "vs-seti",
   "window.zoomLevel": 0,
