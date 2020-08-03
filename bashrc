@@ -61,4 +61,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 which node > /dev/null && source <(node --completion-bash)
+which npm >/dev/null && source <(npm completion)
 which npx > /dev/null && source <(npx --shell-auto-fallback bash)
