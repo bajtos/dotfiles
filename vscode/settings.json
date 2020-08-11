@@ -7,12 +7,14 @@
   "editor.tabSize": 2,
   "editor.rulers": [80],
   "editor.autoIndent": "full",
+  "editor.snippetSuggestions": "top",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "workbench.colorTheme": "Default Light+",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "vs-seti",
   "window.zoomLevel": 0,
+  "window.newWindowDimensions": "maximized",
   "files.autoSave": "afterDelay",
   "cSpell.userWords": [
     "Autocannon",
@@ -122,11 +124,21 @@
   "workbench.editor.tabSizing": "shrink",
   "problems.showCurrentInStatus": true,
   "liveshare.guestApprovalRequired": true,
+  "diffEditor.renderSideBySide": false,
 
   //=== Silence the noise ===//
 
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": false,
   "workbench.sideBar.location": "right",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+
+  //=== Disable “Peek” Previews ===/
+
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "workbench.editor.enablePreview": false
 }
