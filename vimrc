@@ -42,6 +42,8 @@ au FileType javascript inoremap <F2> <C-O>:TernRename<cr>
 au FileType javascript noremap <C-]> :TernDef<cr>
 au FileType gitconfig set noet
 
+au FileType go set ts=4 sw=4 noet
+
 " au FileType markdown :set tw=0
 
 :setlocal spell spelllang=en_us
