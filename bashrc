@@ -62,7 +62,6 @@ export NVM_DIR="$HOME/.nvm"
 
 which node > /dev/null && source <(node --completion-bash)
 which npm >/dev/null && source <(npm completion)
-which npx > /dev/null && source <(npx --shell-auto-fallback bash)
 
 # tabtab source for packages
 # uninstall by removing these lines
