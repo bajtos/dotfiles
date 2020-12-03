@@ -30,6 +30,7 @@
 	cane = commit --amend --no-edit
 	au = add -u
 	cf = commit -m "fixup!"
+	relnotes = log --graph --pretty=format:'%C(yellow)%d%Creset %s %Cred(%h)%Creset'
 [rebase]
 	autosquash = true
 [transfer]
