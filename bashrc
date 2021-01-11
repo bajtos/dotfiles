@@ -38,7 +38,7 @@ elif [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-if which starship >/dev/null; then
+if type starship >/dev/null; then
   function set_win_title(){
       echo -ne "\033]0; ${PWD/#$HOME/\~} \007"
   }
@@ -60,8 +60,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-which node > /dev/null && source <(node --completion-bash)
-which npm >/dev/null && source <(npm completion)
+type node > /dev/null && source <(node --completion-bash)
+type npm >/dev/null && source <(npm completion)
 
 # tabtab source for packages
 # uninstall by removing these lines
