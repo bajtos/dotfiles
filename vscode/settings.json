@@ -171,5 +171,8 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
-  }
+  },
+
+  //=== Misc. settings (edited via VSCode UI) ===/
+  "editor.suggest.showStatusBar": true
 }
