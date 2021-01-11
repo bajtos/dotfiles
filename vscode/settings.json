@@ -125,6 +125,21 @@
   "liveshare.guestApprovalRequired": true,
   "diffEditor.renderSideBySide": false,
 
+  //=== IBM Live Share settings ===/
+
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "liveshare.shareExternalFiles": false,
+  "liveshare.anonymousGuestApproval": "reject",
+  "liveshare.autoShareServers": false,
+  "liveshare.autoShareTerminals": false,
+  "liveshare.connectionMode": "relay",
+  "liveshare.increasedGuestLimit": false,
+  "liveshare.joinDebugSessionOption": "Prompt",
+  "liveshare.openSharedServers": false,
+  "liveshare.showReadOnlyUsersInEditor": "always",
+  "liveshare.accountProvider": "",
+
   //=== Silence the noise ===//
 
   "workbench.activityBar.visible": false,
